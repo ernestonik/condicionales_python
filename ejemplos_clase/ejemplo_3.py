@@ -5,8 +5,8 @@
 # Version: 2.0
 
 # Ejemplos varialbles de texto
-texto_1 = 'a'
-texto_2 = 'b'
+texto_1 = '5'
+texto_2 = '7'
 
 # Verificar que texto es mayor alfabéticamente
 if texto_1 > texto_2:
