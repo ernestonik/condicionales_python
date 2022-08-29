@@ -30,3 +30,24 @@ contenido. Recomendamos pensar bien este problema de lógica con un lápiz y pap
 
 print('Ejercicios de práctica con números')
 # Empezar aquí la resolución del ejercicio
+
+num1 = int(input("Primer temperatura"))
+num2 = int(input("Segunda temperatura:"))
+num3 = int(input("Tercer temperatura"))
+
+promedio = ((num1 + num2 + num3)/ 3)
+
+print ("El promedio de las temperaturas es", promedio)
+
+if ((num1 >= num2) and (num1 >= num3) and (num2 >= num3)):
+    print ("La temperatura maxima es:", num1, "la intermedia es", num2, "y la minimina es", num3)
+elif ((num1 >= num2) and (num1 >= num3) and (num2 <= num3)):
+    print ("La temperatura maxima es:",num1, "la intermedia es", num3, "y la minimina es", num2)
+elif ((num1 <= num2) and (num1 >= num3) and (num2 >= num3)):
+    print ("La temperatura maxima es:", num2, "la intermedia es", num1, "y la minimina es", num3)
+elif ((num1 <= num2) and (num1 <= num3) and (num2 >= num3)):
+    print ("La temperatura maxima es:", num2, "la intermedia es", num3, "y la minimina es", num1)
+elif ((num1 <= num2) and (num1 <= num3) and (num2 <= num3)):
+    print ("La temperatura maxima es:", num3, "la intermedia es", num2, "y la minimina es", num1)
+elif ((num1 >= num2) and (num1 <= num3) and (num2 <= num3)):
+    print ("La temperatura maxima es:", num3, "la intermedia es", num1, "y la minimina es", num2)
