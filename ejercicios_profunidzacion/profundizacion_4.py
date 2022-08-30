@@ -33,3 +33,57 @@ contenido.
 
 print('Ejercicios de práctica con cadenas')
 # Empezar aquí la resolución del ejercicio
+
+texto_1 = str(input("Ingrese Texto 1: "))
+texto_2 = str(input("Ingrese Texto 2: "))
+texto_3 = str(input("Ingrese Texto 3: "))
+
+opcion = 0
+print('''
+    A ver, ¿qué queres hacer?
+    1) Ordenar por orden alfabético.
+    2) Ordenar por cantidad de letras.
+''')
+
+opcion = int(input("Elige una opción: ") )
+
+# por primer letra
+if opcion == 1:
+    print (" ")
+if (texto_1[0] >= texto_2[0]) and (texto_1[0] >= texto_3[0]) and (texto_2[0] >= texto_3[0]):
+    print (texto_1, texto_2, texto_3)
+elif (texto_1[0] >= texto_2 [0]) and (texto_1[0] >= texto_3[0]) and (texto_2[0] >= texto_3 [0]):
+    print (texto_1, texto_2, texto_3)
+elif (texto_1[0] >= texto_2 [0]) and (texto_1[0] >= texto_3[0]) and (texto_2[0] <= texto_3 [0]):
+    print (texto_1, texto_3, texto_2)
+elif (texto_1[0] <= texto_2 [0]) and (texto_1[0] >= texto_3[0]) and (texto_2[0] >= texto_3 [0]):
+    print (texto_2, texto_1, texto_3)
+elif (texto_1[0] <= texto_2 [0]) and (texto_1[0] <= texto_3[0]) and (texto_2[0] >= texto_3 [0]):
+    print (texto_2, texto_3, texto_1)
+elif (texto_1[0] >= texto_2 [0]) and (texto_1[0] <= texto_3[0]) and (texto_2[0] <= texto_3 [0]):
+    print (texto_3, texto_1, texto_2)
+elif (texto_1[0] <= texto_2 [0]) and (texto_1[0] <= texto_3[0]) and (texto_2[0] <= texto_3 [0]):
+    print (texto_3, texto_1, texto_2)
+
+
+tx1 = str(len(texto_1))
+tx2 = str(len(texto_2))
+tx3 = str(len(texto_3))
+
+
+if opcion == 1:
+    print (" ")
+if (tx1 >= tx2) and (tx1 >= tx3) and (tx2 >= tx3):
+    print (texto_1, texto_2, texto_3)
+elif (tx1 >= tx2) and (tx1 >= tx3) and (tx2 <= tx3):
+    print (texto_1, texto_3, texto_2)
+elif (tx1 <= tx2) and (tx1 >= tx3) and (tx2 >= tx3):
+    print (texto_2, texto_1, texto_3)
+elif (tx1 <= tx2) and (tx1 <= tx3) and (tx2 >= tx3):
+    print (texto_2, texto_3, texto_1)
+elif (tx1 >= tx2) and (tx1 <= tx3) and (tx2 <= tx3):
+    print (texto_3, texto_1, texto_2)
+elif (tx1 <= tx2) and (tx1 <= tx3) and (tx2 <= tx3):
+    print (texto_3, texto_2, texto_1)
+
+print ("Este si que fue dificil!")
