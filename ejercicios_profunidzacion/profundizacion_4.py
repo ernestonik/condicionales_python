@@ -71,7 +71,7 @@ tx2 = str(len(texto_2))
 tx3 = str(len(texto_3))
 
 
-if opcion == 1:
+if opcion == 2:
     print (" ")
 if (tx1 >= tx2) and (tx1 >= tx3) and (tx2 >= tx3):
     print (texto_1, texto_2, texto_3)
