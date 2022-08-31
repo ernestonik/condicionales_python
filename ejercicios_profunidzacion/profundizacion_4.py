@@ -63,7 +63,7 @@ elif (texto_1[0] <= texto_2 [0]) and (texto_1[0] <= texto_3[0]) and (texto_2[0] 
 elif (texto_1[0] >= texto_2 [0]) and (texto_1[0] <= texto_3[0]) and (texto_2[0] <= texto_3 [0]):
     print (texto_3, texto_1, texto_2)
 elif (texto_1[0] <= texto_2 [0]) and (texto_1[0] <= texto_3[0]) and (texto_2[0] <= texto_3 [0]):
-    print (texto_3, texto_1, texto_2)
+    print (texto_3, texto_2, texto_1)
 
 
 tx1 = str(len(texto_1))
